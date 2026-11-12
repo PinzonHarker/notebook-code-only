@@ -2,7 +2,7 @@
   "name": "collapse-code-only",
   "displayName": "Collapse Code Only",
   "description": "Collapse or expand only code cell inputs in Jupyter notebooks for Visual Studio Code, while keeping Markdown cells and outputs visible.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "local",
   "private": true,
   "license": "GPL-3.0-or-later",
@@ -22,8 +22,8 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [
-      {"command":"notebookCodeOnly.collapse","title":"Collapse Code Cell Inputs Only","category":"Notebook", "enablement":"notebookEditorFocused"},
-      {"command":"notebookCodeOnly.expand","title":"Expand Code Cell Inputs Only","category":"Notebook", "enablement":"notebookEditorFocused"}
+      {"command":"notebookCodeOnly.collapse","title":"Collapse Code Cell Inputs Only","category":"Notebook"},
+      {"command":"notebookCodeOnly.expand","title":"Expand Code Cell Inputs Only","category":"Notebook"}
     ],
     "keybindings": [
       {"command":"notebookCodeOnly.collapse","key":"ctrl+alt+shift+[","when":"notebookEditorFocused"},
