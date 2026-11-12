@@ -1,0 +1,33 @@
+{
+  "name": "notebook-code-only",
+  "displayName": "Notebook Code Only Collapse",
+  "description": "Collapse or expand only code cell inputs in Jupyter notebooks, leaving Markdown and outputs visible.",
+  "version": "0.1.1",
+  "publisher": "local",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "icon": "media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PinzonHarker/notebook-code-only.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PinzonHarker/notebook-code-only/issues"
+  },
+  "homepage": "https://github.com/PinzonHarker/notebook-code-only#readme",
+  "engines": { "vscode": "^1.90.0" },
+  "categories": ["Other", "Notebooks"],
+  "keywords": ["jupyter", "notebook", "ipynb", "collapse", "code cells"],
+  "activationEvents": ["onCommand:notebookCodeOnly.collapse", "onCommand:notebookCodeOnly.expand"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {"command":"notebookCodeOnly.collapse","title":"Collapse Code Cell Inputs Only","category":"Notebook", "enablement":"notebookEditorFocused"},
+      {"command":"notebookCodeOnly.expand","title":"Expand Code Cell Inputs Only","category":"Notebook", "enablement":"notebookEditorFocused"}
+    ],
+    "keybindings": [
+      {"command":"notebookCodeOnly.collapse","key":"ctrl+alt+shift+[","when":"notebookEditorFocused"},
+      {"command":"notebookCodeOnly.expand","key":"ctrl+alt+shift+]","when":"notebookEditorFocused"}
+    ]
+  }
+}
