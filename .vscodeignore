@@ -1,0 +1,5 @@
+.vscode/**
+*.vsix
+.git/**
+.github/**
+node_modules/**
