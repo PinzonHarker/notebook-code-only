@@ -1,8 +1,8 @@
 {
-  "name": "notebook-code-only",
-  "displayName": "Notebook Code Only Collapse",
-  "description": "Collapse or expand only code cell inputs in Jupyter notebooks, leaving Markdown and outputs visible.",
-  "version": "0.1.1",
+  "name": "collapse-code-only",
+  "displayName": "Collapse Code Only",
+  "description": "Collapse or expand only code cell inputs in Jupyter notebooks for Visual Studio Code, while keeping Markdown cells and outputs visible.",
+  "version": "0.2.0",
   "publisher": "local",
   "private": true,
   "license": "GPL-3.0-or-later",
@@ -17,7 +17,7 @@
   "homepage": "https://github.com/PinzonHarker/notebook-code-only#readme",
   "engines": { "vscode": "^1.90.0" },
   "categories": ["Other", "Notebooks"],
-  "keywords": ["jupyter", "notebook", "ipynb", "collapse", "code cells"],
+  "keywords": ["jupyter", "notebook", "ipynb", "collapse", "code cells", "vscode"],
   "activationEvents": ["onCommand:notebookCodeOnly.collapse", "onCommand:notebookCodeOnly.expand"],
   "main": "./extension.js",
   "contributes": {
