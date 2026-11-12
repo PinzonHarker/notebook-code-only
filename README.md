@@ -1,6 +1,8 @@
-# Notebook Code Only Collapse
+# Collapse Code Only
 
-Collapse or expand **only the input** of Code cells in Jupyter notebooks (`.ipynb`). Markdown cells and cell outputs remain visible.
+![Collapse Code Only icon](media/icon.png)
+
+**Collapse Code Only** is a Visual Studio Code extension for Jupyter notebooks (`.ipynb`). It collapses or expands **only the input area of Code cells** across the active notebook, while keeping Markdown cells and cell outputs visible. It is useful for reviewing notebook results or Markdown documentation without losing the structure of the notebook.
 
 ![VS Code version](https://img.shields.io/badge/VS%20Code-%5E1.90.0-007ACC?logo=visualstudiocode&logoColor=white)
 ![License](https://img.shields.io/badge/license-GPL--3.0--or--later-blue)
@@ -44,7 +46,7 @@ Keyboard shortcuts can be changed in VS Code's **Keyboard Shortcuts** settings.
 ```bash
 npm install -g @vscode/vsce
 vsce package --no-dependencies
-code --install-extension notebook-code-only-0.1.0.vsix
+code --install-extension collapse-code-only-0.2.0.vsix
 ```
 
 The extension has no runtime dependencies.
